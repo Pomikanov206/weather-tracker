@@ -2,7 +2,7 @@ import axios from "axios";
 import type { Measurement } from "../types/Measurement";
 
 const api = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: import.meta.env.VITE_API_URL + "/api",
 });
 
 export const getMeasurements = async (): Promise<Measurement[]> => {
