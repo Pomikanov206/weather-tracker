@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/measurements")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins =  "*")
 public class MeasurementController {
 
     private final MeasurementService measurementService;
